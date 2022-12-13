@@ -5,7 +5,6 @@ prompt('Enter number:', function (d) {
 while (i < d) { 
     i = i + 1;
     i = i * 2;
-    // console.log(i) //debug tool
     i = i + 2;
     i = i * 3;
     i = i + 3;
@@ -13,14 +12,11 @@ while (i < d) {
     i = i + 4;
     i = i * 5;
     i = i * t;
-    
- // console.log(i) //debug tool
+
 }
 console.log(i)
 process.exit();
 });
-
-// функция для ввода пользователя (не очень сложная нашел угадайте где? на стаковерфлоу)
 function prompt(question, callback) {
     var stdin = process.stdin,
         stdout = process.stdout;
